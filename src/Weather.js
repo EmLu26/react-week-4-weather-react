@@ -16,15 +16,16 @@ export default function Weather(props) {
 
   axios.get(apiUrl).then(handleResponse);
   return (
-    <BallTriangle
-      className="App-loader"
-      height="100"
-      width="100"
-      radius="9"
-      color="blue"
-      ariaLabel="loading"
-      wrapperStyle
-      wrapperClass
-    />
+    <div className="App-loader">
+      <BallTriangle
+        height="100"
+        width="100"
+        radius="9"
+        color="blueviolet"
+        ariaLabel="loading"
+        wrapperStyle
+        wrapperClass
+      />
+    </div>
   );
 }
